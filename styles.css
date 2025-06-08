@@ -1,0 +1,142 @@
+:root {
+  /* font styles */
+  --ff: "Manrope", sans-serif;
+  --fs: 1rem; /* should be 13px */
+  --fs-head: 0.825rem;
+  --fs-smaller: 0.752rem;
+  --fw-one: 500;
+  --fw-two: 700;
+
+  /* colors */
+  --darker-color: hsl(217, 19%, 35%);
+  --dark-color: hsl(214, 17%, 51%);
+  --grey-blue-color: hsl(212, 23%, 69%);
+  --light-blue-color: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* css reset simple */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve centering within parent */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff);
+  font-size: var(--fs);
+  margin: 0 auto;
+  background-color: var(--light-blue-color);
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-width: 329px;
+}
+
+.share-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-heading {
+  font-size: var(--fs-head);
+}
+
+.article-description {
+  font-size: var(--fs-smaller);
+}
+
+.article {
+  padding: 20px;
+  border: 2px dotted red;
+  background-color: var(--white);
+  
+  
+  
+}
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (min-width: 720px) {
+  body {
+    background-color: red;
+  
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    
+  }
+
+  .drawer-image {
+    width: 50%;
+  }
+
+
+}
