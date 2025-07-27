@@ -6,5 +6,5 @@ function shareSocial() {
 };
 
 // call the function 
-
+share.addEventListener("click", shareSocial);
  
