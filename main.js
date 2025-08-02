@@ -1,10 +1,12 @@
 const share = document.getElementById("share-btn");
 
-function shareSocial() {
-     // use share event here listen for click
-    
+function toggleVisibility(select) {
+     // use function to toggle
+    document.querySelector(select).classList.toggle("hidden");
 };
 
-// call the function 
-share.addEventListener("click", shareSocial);
+// add click event listener 
+document.querySelector("#myButton").addEventListener("click", () => {
+  toggleVisibility("#myDiv");
+});
  
