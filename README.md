@@ -66,8 +66,22 @@ I went ahead and created the variable to get the class or selector. Afterwhich i
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.share-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--light-blue-color);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.share-circle::after {
+  position: absolute;
+  z-index: 0;
+  display: block;
 }
 ```
 ```js
@@ -75,8 +89,6 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 

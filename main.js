@@ -6,7 +6,8 @@ function toggleVisibility(select) {
 };
 
 // add click event listener 
-document.querySelector("#myButton").addEventListener("click", () => {
+share.addEventListener("click", (event) => {
   toggleVisibility("#myDiv");
+  
 });
  
