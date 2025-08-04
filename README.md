@@ -52,7 +52,7 @@ I am proud of this desktop version
 - Mobile-first workflow
 - Vanilla JS
 
-I went ahead and did the html structure then added some css working my way through from top to bottom. 
+I went ahead and did the html structure then added some css working my way through from top to bottom. Then I worked on my JS section for the button click element. My thought process was that I could make the click element the share image however it may be better to put the onclick event on the whole button. In my future projects I will do these faster I have improved alot and I want to do many more challenges like this. 
 
 
 ### What I learned
