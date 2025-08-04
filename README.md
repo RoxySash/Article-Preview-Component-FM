@@ -28,14 +28,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Error in CSS](./images/Screenshot%20Section%20Two%20Error.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+In the above image the social share icons were not toggling but I figured that I needed to add the important tag and that worked.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![Desktop Version](./images/Screenshot%20Desktop%20View.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+I am proud of this desktop version
 
+![Desktop Version Button Active](./images/Screenshot%20Desktop%20Active%20Button.png)
 
 ### Links
 
@@ -47,7 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties / Media Queries
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
@@ -84,26 +85,36 @@ I went ahead and created the variable to get the class or selector. Afterwhich i
   display: block;
 }
 ```
+
+- I learned how to toggle the visibility of elements with JS
+- Using `z-index` yet again was fun along with `position` and display to hide or show sections
+- Applying `!important` to override the stubborn classes such as hidden
+- Debugging the event listener and class logic
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+shareBtns.forEach(btn => {
+
+// add click event listener 
+btn.addEventListener("click", () => {
+ shareSectionOne.classList.toggle("hidden");
+  shareSectionTwo.classList.toggle("hidden");
+});
+ 
+});
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Changing svg colors 
+- JS targeting
+- Adding ARIA accessibility support 
+- Improve theme toggling 
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Blusky - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@RoxySash](https://www.frontendmentor.io/profile/yourusername)
+- Blusky - [@roxanedev.bsky.social](https://bsky.app/profile/roxanedev.bsky.social)
 
 
 
