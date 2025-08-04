@@ -99,7 +99,7 @@ h6 {
   border: 3px dotted black;
   padding-bottom: 0;
   margin: 0;
-   display: none;
+   
    /* use this to hid all of the div display: none;
    
    */
@@ -133,7 +133,8 @@ h6 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+
 }
 
 .michelle-avatar {
@@ -160,7 +161,7 @@ h6 {
   display: block;
 }
 
-#share-btn {
+.share-btn {
   cursor: pointer;
 }
 
@@ -192,6 +193,12 @@ h6 {
   color: var(--grey-blue-color);
 
 }
+
+.share-section-one,
+.share-section-two {
+  position: relative;
+  z-index: 1;
+}
 .share-section-two {
   background-color: var(--darker-color);
  
@@ -199,7 +206,7 @@ h6 {
   width: 100%;
   height: auto; /* dont set height yet */
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   bottom: 0;
@@ -231,6 +238,17 @@ h6 {
   align-items: center;
   gap: 20px;
 }
+
+.share-section-two .share-circle {
+  background-color: var(--dark-color);
+}
+ 
+
+.share-btn.active img{
+  filter: invert(90%) brightness(200%) contrast(120%);
+}
+
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
