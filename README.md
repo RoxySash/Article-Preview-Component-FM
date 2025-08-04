@@ -12,9 +12,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -40,8 +38,8 @@ I am proud of this desktop version
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Code](https://github.com/RoxySash/Article-Preview-Component-FM.git)
+- Live Site URL: [Click Here](https://roxysash.github.io/Article-Preview-Component-FM/)
 
 ## My process
 
